@@ -36,6 +36,18 @@ public class DefaultExceptionHandler extends ResponseEntityExceptionHandler {
 		exceptionEntity.setStatus(Status.FAILED);
 		return handleExceptionInternal(ex, exceptionEntity, new HttpHeaders(), HttpStatus.BAD_REQUEST, request);
 	}
+	
+	@ExceptionHandler(value = { InvalidDataException.class })
+	public ResponseEntity<Object> handleInvalidDataException(InvalidDataException ex, WebRequest request) {
+
+		log.info("InvalidDataException : " + ex.toString());
+		ex.printStackTrace();
+
+		ExceptionDetails exceptionEntity = new ExceptionDetails();
+		exceptionEntity.setMsg(ex.getMessage() != null ? ex.getMessage() : defaultMessage);
+		exceptionEntity.setStatus(Status.FAILED);
+		return handleExceptionInternal(ex, exceptionEntity, new HttpHeaders(), HttpStatus.BAD_REQUEST, request);
+	}
 
 	/* <======Basic Exceptions======> */
 	@ExceptionHandler(value = { Exception.class })
