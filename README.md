@@ -1,6 +1,6 @@
 
 # xcubated-JAVA Assignment
-I build this backend application using Java 8, Spring boot, jUnit, Maven, Lombok and Service and Controller class based architecture.
+I build this backend application using Java 8, Spring boot, jUnit, Maven, Lombok, Service and Controller class based architecture.
 
 
 ## Features
