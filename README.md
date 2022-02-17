@@ -34,16 +34,28 @@ For building and running the application you need:
  - Test case 1:
 	> Input: [10,20,30] <br />
 	> Output: <br />
-	![image](https://user-images.githubusercontent.com/61537962/154401725-68c01373-3ca4-4772-b0ca-06dbae0bd697.png)
+	![Test_case_1](https://user-images.githubusercontent.com/61537962/154401725-68c01373-3ca4-4772-b0ca-06dbae0bd697.png) <br />
+	> **cURL:** curl --location --request POST 'http://localhost:8080/api/numberoperations' \
+--header 'Content-Type: application/json' \
+--data-raw '[10,20,30]'
  - Test case 2:
-	-> Input: [1.5, 2] <br />
-	-> Output: <br />
-	![image](https://user-images.githubusercontent.com/61537962/154401628-950ca2d0-6064-4ae6-ac8e-053f2af1b60c.png)
+	> Input: [1.5, 2] <br />
+	> Output: <br />
+	![Test_case_2](https://user-images.githubusercontent.com/61537962/154401628-950ca2d0-6064-4ae6-ac8e-053f2af1b60c.png) <br /> 
+	> **cURL:** curl --location --request POST 'http://localhost:8080/api/numberoperations' \
+--header 'Content-Type: application/json' \
+--data-raw '[1.5,2]'
  - Test case 3:
-	-> Input: [] <br />
-	-> Output: <br />
-	![image](https://user-images.githubusercontent.com/61537962/154401962-c2ecdd1a-74e4-4305-9e94-65163ef1b028.png)
+	> Input: [] <br />
+	> Output: <br />
+	![Test_case_3](https://user-images.githubusercontent.com/61537962/154401962-c2ecdd1a-74e4-4305-9e94-65163ef1b028.png) <br /> 
+	> **cURL:** curl --location --request POST 'http://localhost:8080/api/numberoperations' \
+--header 'Content-Type: application/json' \
+--data-raw '[]'
  - Test case 4:
-	-> Input: [10, 10, 10] <br />
-	-> Output: <br />
-	![image](https://user-images.githubusercontent.com/61537962/154402086-b0397510-ccda-4b95-825b-ed3dd85404fe.png)
+	> Input: [10, 10, 10] <br />
+	> Output: <br />
+	![Test_case_4](https://user-images.githubusercontent.com/61537962/154402086-b0397510-ccda-4b95-825b-ed3dd85404fe.png)<br /> 
+	> **cURL:** curl --location --request POST 'http://localhost:8080/api/numberoperations' \
+--header 'Content-Type: application/json' \
+--data-raw '[10, 10, 10]'
